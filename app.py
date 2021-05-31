@@ -49,9 +49,9 @@ def model_predict(img_path, model):
     preds = model.predict(img)
     preds=int(preds[0])
     if preds==1:
-        preds="The is a DOG"
+        preds="This is a DOG"
     else:
-        preds="The is a CAT"
+        preds="This is a CAT"
     
     
     return preds
